@@ -1,13 +1,15 @@
 # vigilant-spork
 
+[http://localhost:3000]
+
 Install NodeJS Locally:
 1. Check if Node is already installed:
 	$ node --version
 
 2. If not installed, then proceed to install:
-	https://nodejs.org/en/download/
+	[https://nodejs.org/en/download/]
 
-	https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
+	[https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions]
 
 To update NodeJS:
 	$ sudo npm cache clean -f
@@ -20,3 +22,6 @@ Clone the Repo:
 		(this sets up the local copy of the code)
 
 IDE: WebStorm by JetBrains
+
+
+[https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions]
