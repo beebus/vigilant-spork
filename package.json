@@ -1,12 +1,12 @@
 {
-  "name": "node_test1",
+  "name": "vigilant-spork",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "helloWorld.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Michael Beebower",
   "license": "ISC"
 }
