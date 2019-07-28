@@ -1,6 +1,9 @@
 # vigilant-spork
 
-[http://localhost:3000]
+Install PM2
+	$ sudo npm install -g pm2
+	$ pm2 start helloWorld.js
+	[http://localhost:3000]
 
 Install NodeJS Locally:
 1. Check if Node is already installed:
