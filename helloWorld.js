@@ -3,7 +3,7 @@ var http = require('http'),
 
 function serveStaticFile(res, path, contentType, responseCode) {
         if(!responseCode) responseCode = 200;
-        fs.readFile(__dirname + path, function (err, data) {
+        fs.readFile(__dirname + path, function (err,data) {
                 if(err) {
                         res.writeHead(500, {'Content-Type': 'text/plain'});
                         res.end('500 - Internal Error');
@@ -15,7 +15,7 @@ function serveStaticFile(res, path, contentType, responseCode) {
         });
 }
 
-http.createServer(function (req, res) {
+http.createServer(function (req,res) {
         // normalize URL by removing querystring, optional
         // trailing slash, and making it lowercase
         var path = req.url.replace(/\/?(?:\?.*)?$/, '').toLowerCase();
@@ -26,7 +26,7 @@ http.createServer(function (req, res) {
                 case '/about':
                         serveStaticFile(res, '/public/about.html', 'text/html');
                         break;
-                case 'img/logo.jpg':
+                case '/img/logo.jpg':
                         serveStaticFile(res, '/public/img/logo.jpg', 'image/jpeg');
                         break;
                 default:

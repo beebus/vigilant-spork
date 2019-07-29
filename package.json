@@ -1,7 +1,7 @@
 {
   "name": "vigilant-spork",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hello World, Ch2 from Web Development with Node and Express",
   "main": "helloWorld.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
