@@ -1,12 +1,25 @@
 {
   "name": "vigilant-spork",
   "version": "1.0.0",
-  "description": "Hello World, Ch2 from Web Development with Node and Express",
-  "main": "helloWorld.js",
+  "description": "Meadowlark Travel, a company offering services for people visiting the great state of Oregon.",
+  "main": "meadowlark.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
-  "keywords": [],
-  "author": "Michael Beebower",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beebus/vigilant-spork.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "beebus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beebus/vigilant-spork/issues"
+  },
+  "homepage": "https://github.com/beebus/vigilant-spork#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

@@ -6,15 +6,15 @@ Install PM2
 ```
 Start server displaying the NodeJS file
 ```
-	$ pm2 start helloWorld.js
+	$ pm2 start meadowlark.js
 ```
 OR
 ```
-	$ node helloWorld.js
+	$ node meadowlark.js
 ```
 OR
 ```
-	$ nodejs helloWorld.js
+	$ nodejs meadowlark.js
 ```
 
 See rendered product:
@@ -22,7 +22,7 @@ See rendered product:
 
 Stop server
 ```
-	$ pm2 stop helloWorld.js
+	$ pm2 stop meadowlark.js
 ```
 OR Ctrl-C to terminate the node or nodejs servers.
 
