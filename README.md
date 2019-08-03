@@ -3,9 +3,18 @@
 Install PM2
 ```
 	$ sudo npm install -g pm2
+```
+Start server displaying the NodeJS file
+```
 	$ pm2 start helloWorld.js
 ```
-[http://localhost:3000]
+See rendered product:
+[http://localhost:3000](http://localhost:3000)
+
+Stop server
+```
+	$ pm2 stop helloWorld.js
+```
 
 Install NodeJS Locally:
 1. Check if Node is already installed:
