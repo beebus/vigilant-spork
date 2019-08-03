@@ -1,11 +1,11 @@
 # vigilant-spork
 
 Install PM2
-	```
+```
 	$ sudo npm install -g pm2
 	$ pm2 start helloWorld.js
-	```
-	[http://localhost:3000]
+```
+[http://localhost:3000]
 
 Install NodeJS Locally:
 1. Check if Node is already installed:
@@ -24,8 +24,8 @@ To update NodeJS:
 ```
 
 Clone the Repo:
-	1. Navigate in terminal to parent folder of the directory you want to be working in.
-	2. `$ git clone https://github.com/beebus/vigilant-spork.git`
+1. Navigate in terminal to parent folder of the directory you want to be working in.
+2. `$ git clone https://github.com/beebus/vigilant-spork.git`
 		(this sets up the local copy of the code)
 
 IDE: WebStorm by JetBrains
