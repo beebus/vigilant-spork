@@ -1,6 +1,23 @@
 var express = require('express');
 var app = express();
+
+// set up handlebars view engine
+var handlebars = require('express-handlebars').create({defaultLayout: 'main'});
+app.engine('handlebars','handlebars.engine');
+app.set('view engine', 'handlebars');
+
 app.set('port', process.env.PORT || 3000);
+
+app.get('/', function(req, res) {
+    res.type('text/plain');
+    //res.render('home');
+    res.send('Meadowlark Travel');
+});
+app.get('/about', function(req, res){
+    res.type('text/plain');
+    res.send('About Meadowlark Travel');
+});
+
 
 // custom 404 page
 app.use(function (req, res) {
