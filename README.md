@@ -8,6 +8,15 @@ Start server displaying the NodeJS file
 ```
 	$ pm2 start helloWorld.js
 ```
+OR
+```
+	$ node helloWorld.js
+```
+OR
+```
+	$ nodejs helloWorld.js
+```
+
 See rendered product:
 [http://localhost:3000](http://localhost:3000)
 
@@ -15,6 +24,7 @@ Stop server
 ```
 	$ pm2 stop helloWorld.js
 ```
+OR Ctrl-C to terminate the node or nodejs servers.
 
 Install NodeJS Locally:
 1. Check if Node is already installed:
