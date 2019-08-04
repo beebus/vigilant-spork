@@ -4,7 +4,16 @@ var fortune = require('./lib/fortune.js');
 var app = express();
 
 // set up handlebars view engine
-var handlebars = require('express-handlebars').create({defaultLayout: 'main'});
+var handlebars = require('express-handlebars').create({
+    defaultLayout: 'main',
+    helpers: {
+        section: function (name, options) {
+            if (!this._sections) this._sections = {};
+            this._sections[name] = options.fn(this);
+            return null;
+        }
+    }
+});
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
@@ -33,6 +42,9 @@ app.get('/about', function (req, res) {
 });
 app.get('/tours/hood-river', function (req, res) {
     res.render('tours/hood-river');
+});
+app.get('/tours/oregon-coast', function (req, res) {
+    res.render('tours/oregon-coast');
 });
 app.get('/tours/request-group-rate', function (req, res) {
     res.render('tours/request-group-rate');
