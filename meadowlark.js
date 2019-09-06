@@ -1,6 +1,7 @@
 // Dependencies
 var express = require('express');
 var fortune = require('./lib/fortune.js');
+
 var app = express();
 
 // set up handlebars view engine
@@ -30,9 +31,9 @@ app.use(function (req, res, next) {
 
 // Routes
 app.get('/', function (req, res) {
-    res.type('text/plain');
-    // res.render('home');
-    res.send('Meadowlark Travel');
+    // res.type('text/plain');
+    res.render('home');
+    // res.send('Meadowlark Travel');
 });
 app.get('/about', function (req, res) {
     res.render('about', {
@@ -50,22 +51,24 @@ app.get('/tours/request-group-rate', function (req, res) {
     res.render('tours/request-group-rate');
 });
 
-
-// custom 404 page
-app.use(function (req, res) {
-    res.type('text/plain');
+// 404 catch-all handler (middleware)
+app.use(function (req, res, next) {
+    // res.type('text/plain');
     res.status(404);
-    res.send('404 - Not Found');
+    // res.send('404 - Not Found');
+    res.render('404');
 });
 
-// custom 500 page
+// 500 error handler (middleware)
 app.use(function (err, req, res, next) {
     console.error(err.stack);
-    res.type('text/plain');
+    // res.type('text/plain');
     res.status(500);
-    res.send('500 - Server Error');
+    // res.send('500 - Server Error');
+    res.render('500');
 });
 
 app.listen(app.get('port'), function () {
-    console.log('Express started on http://localhost:' + app.get('post') + '; press Ctrl-C to terminate.');
+    console.log('Express started on http://localhost:' +
+        app.get('port') + '; press Ctrl-C to terminate.');
 });
